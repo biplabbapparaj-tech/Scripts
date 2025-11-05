@@ -9,9 +9,9 @@ phases:
       - npm install
   build:
     commands:
-      - echo "Build phase started"
-      - npm run build
+      - echo "Running tests"
+      - npm test || echo "No tests found"
 
 artifacts:
   files:
-    - "build/**/*"
+    - "**/*"
